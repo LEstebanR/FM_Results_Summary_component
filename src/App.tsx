@@ -41,7 +41,13 @@ function App() {
         <p>Summary</p>
         <div>
           {DATA.map((item) => {
-            return <Card />;
+            return (
+              <Card
+                title={item.category}
+                icon={item.icon}
+                number={item.score}
+              />
+            );
           })}
         </div>
         <button>Continue</button>
