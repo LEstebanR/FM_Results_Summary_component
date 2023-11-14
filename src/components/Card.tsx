@@ -6,8 +6,14 @@ interface Props {
   number: number;
 }
 
-const Card: FC<Props> = ({ title, icon, number, color }) => {
-  return <p>{title}</p>;
+const Card: FC<Props> = ({ title, icon, number }) => {
+  return (
+    <>
+      <p>{title}</p>
+      <p>{icon}</p>
+      <p>{number}</p>
+    </>
+  );
 };
 
 export default Card;
