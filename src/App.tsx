@@ -1,25 +1,37 @@
 import Card from "./components/Card";
+import Reaction from "./assets/images/icon-reaction.svg";
+import Memory from "./assets/images/icon-memory.svg";
+import Verbal from "./assets/images/icon-verbal.svg";
+import Visual from "./assets/images/icon-visual.svg";
 
 const DATA = [
   {
     category: "Reaction",
     score: 80,
-    icon: "./assets/images/icon-reaction.svg",
+    icon: Reaction,
+    color: "text-lightRed",
+    background: "bg-lightRed",
   },
   {
     category: "Memory",
     score: 92,
-    icon: "./assets/images/icon-memory.svg",
+    icon: Memory,
+    color: "text-orangeYellow",
+    background: "bg-orangeYellow",
   },
   {
     category: "Verbal",
     score: 61,
-    icon: "./assets/images/icon-verbal.svg",
+    icon: Verbal,
+    color: "text-greenTeal",
+    background: "bg-greenTeal",
   },
   {
     category: "Visual",
     score: 72,
-    icon: "./assets/images/icon-visual.svg",
+    icon: Visual,
+    color: "text-cobaltBlue",
+    background: "bg-cobaltBlue",
   },
 ];
 
@@ -37,20 +49,24 @@ function App() {
           You scored higher than 65% of the people who have taken these tests.
         </p>
       </div>
-      <div className="h-3/5 flex flex-col justify-around">
-        <p>Summary</p>
-        <div>
+      <div className="h-3/5 flex flex-col justify-around items-start md:items-center w-11/12 md:w-1/4 md:h-2/5 pl-8">
+        <p className="text-lg font-bold">Summary</p>
+        <div className="w-full flex flex-col items-center pr-8 md:pr-0 gap-2">
           {DATA.map((item) => {
             return (
               <Card
                 title={item.category}
                 icon={item.icon}
                 number={item.score}
+                color={item.color}
+                background={item.background}
               />
             );
           })}
         </div>
-        <button>Continue</button>
+        <button className=" px-4 bg-darkGrayBlue text-white py-3 rounded-full w-11/12 md:w-full">
+          Continue
+        </button>
       </div>
     </div>
   );
