@@ -37,8 +37,8 @@ const DATA = [
 
 function App() {
   return (
-    <div className="h-screen w-screen flex flex-col items-center justify-between md:justify-center md:flex-row">
-      <div className="h-2/5 border flex flex-col items-center justify-around  w-full md:w-1/4 rounded-b-2xl  md:rounded-2xl bg-gradient-to-b from-slateBlue to-royalBlue py-4">
+    <div className="h-screen w-screen flex flex-col items-center justify-between md:justify-center md:flex-row ">
+      <div className="h-2/5 border flex flex-col items-center justify-around  w-full md:w-1/4 rounded-b-2xl  md:rounded-2xl bg-gradient-to-b from-slateBlue to-royalBlue py-4 ">
         <p className="text-lightLavender text-lg font-bold">Your Result</p>
         <div className="p-2 rounded-full flex flex-col justify-center items-center bg-gradient-to-b from-violetBlue to-persianBlue h-24 w-24">
           <p className="text-white text-4xl font-bold">76</p>
@@ -49,7 +49,7 @@ function App() {
           You scored higher than 65% of the people who have taken these tests.
         </p>
       </div>
-      <div className="h-3/5 flex flex-col justify-around items-start md:items-center w-11/12 md:w-1/4 md:h-2/5 pl-8">
+      <div className="h-3/5 flex flex-col justify-around items-start md:items-center w-11/12 md:w-1/4 md:h-2/5 pl-8  md:rounded-r-xl md:px-2 md:shadow-2xl">
         <p className="text-lg font-bold">Summary</p>
         <div className="w-full flex flex-col items-center pr-8 md:pr-0 gap-2">
           {DATA.map((item) => {
@@ -64,7 +64,7 @@ function App() {
             );
           })}
         </div>
-        <button className=" px-4 bg-darkGrayBlue text-white py-3 rounded-full w-11/12 md:w-full">
+        <button className=" px-4 bg-darkGrayBlue text-white py-3 rounded-full w-11/12 md:w-full hover:bg-red-500">
           Continue
         </button>
       </div>
