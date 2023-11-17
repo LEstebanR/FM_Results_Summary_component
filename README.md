@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL:]([https://your-solution-url.com](https://github.com/LEstebanR/FM_Results_Summary_component))
-- [Live Site URL:([https://your-live-site-url.com](https://fm-results-summary-component-navy.vercel.app/))
+- [Solution URL:]((https://github.com/LEstebanR/FM_Results_Summary_component))
+- [Live Site URL:](https://fm-results-summary-component-navy.vercel.app/))
 
 ## My process
 
